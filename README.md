@@ -17,7 +17,7 @@ Understanding the difficulties of maintaining a solution in working order in con
 - convergence of space 9l is designed so that on different systems the control differs as little as possible;
 - use of file entities to the maximum - if a user is isolated and does not have an up-to-date solution, then he can receive a corrected executable file from another user, restoring the work of 9l simply by replacing the old executable file with a new one in his space;
 - the command interface has been reduced to 9 commands - for maximum memorization;
-- not a protocol - a protocol is a permanent solution, in conditions of isolation there is nothing permanent that will always work. To do this, we will divide 9l into many independent parts and unite them with an implementation link (which can be replaced with another at any time, the link simply describes how to run the parts and what data to slip into them - in the proposed implementation, the functions of the links are performed by mike and sally);
+- not a protocol - a protocol is a permanent solution, in conditions of isolation there is nothing permanent that will always work. To do this, we will divide 9l into many independent parts and unite them with an implementation bundle (which can be replaced with another at any time, the bundle simply describes how to run the parts and what data to slip into them - in the proposed implementation, the functions of the bundle are performed by mike and sally);
 - using daemons as user-space-only processes;
 - using Yggdrasil connectivity allows you to easily connect devices to one network.
 
