@@ -28,13 +28,13 @@ Transfer archive - tar.gz archive which contains files that need to be transferr
 
 # Funds provided by 9l
 Demons:
-1*. 9le - remote command shell (the goal is to share resources for executing programs on remote machines);
-2. kick - exchange of public peers between machines (the goal is the maximum number of paths from machine A to machine B)$
-3*. acqping - ping of a remote machine which will tell you the port of the remote machine and what tool to use to establish a connection;
-4. callback - file sharing between devices;
-5. accompilce - notification about file sharing.
+1. 9le - remote command shell (the goal is to share resources for executing programs on remote machines);<br>
+2. kick - exchange of public peers between machines (the goal is the maximum number of paths from machine A to machine B);<br>
+3. acqping - ping of a remote machine which will tell you the port of the remote machine and what tool to use to establish a connection; <br>
+4. callback - file sharing between devices;<br>
+5. accompilce - notification about file sharing.<br>
 
-* - not directly presented in the bundle
+1, 3 - not directly presented in the bundle
 
 Note: all daemons can be used independently of each other.
 
@@ -150,7 +150,9 @@ If you want to share the list of public peers with other devices. To get started
 ```
 #   yggdrasilctl getpeers > ../res/nodes
 ```
-Start the daemon server (so that you can respond to other devices), to do this, use the "start peer server" command in mike. Next, you need to use the "start peer client" command, you will be asked to enter the IPv6 address and port (it is assumed that the port can be found using acuping) of the device with which you want to synchronize the addresses of peers, specify the addresses in square brackets, you can specify several addresses. Example: "[IPv6 port] [IPv6 port] [IPv6 port]". The list of peers will be available in the /res/nodes file of your space.
+Start the daemon server (so that you can respond to other devices), to do this, use the "start peer server" command in mike. 
+
+Next, you need to use the "start peer client" command, you will be asked to enter the IPv6 address and port (it is assumed that the port can be found using acuping) of the device with which you want to synchronize the addresses of peers, specify the addresses in square brackets, you can specify several addresses. Example: "[IPv6 port] [IPv6 port] [IPv6 port]". The list of peers will be available in the /res/nodes file of your space.
 
 # Conclusion
 Cons: 
