@@ -23,7 +23,7 @@ Understanding the difficulties of maintaining a solution in working order in con
 
 # Unclear words
 Manifest - an analogue of torrent files, contains information about the distribution, is used to indicate what needs to be downloaded;
-A daemon is simply a background process that performs one task assigned to it;
+Daemon - is simply a background process that performs one task assigned to it;
 Transfer archive - tar.gz archive which contains files that need to be transferred to the receiving device.
 
 # Funds provided by 9l
@@ -138,7 +138,7 @@ $   echo stop > ../daemon/daemon_status_files/id_daemon
 File server mode supports a limited number of commands: create, start manifest, start sedder, start peer server, start peer client, stop.
 
 # Advanced use and offline use
-It is possible to use daemons in isolation from the daemon server; for this, instead of mike, use sally directly, but in this case you take on the responsibility of stopping the spawned processes - this is useful if you need deeper control over actions, for example in scripts. In this case, you run the necessary script for the daemon yourself and control its termination.
+It is possible to use daemons in isolation from the daemon server, for this, instead of mike, use sally directly, but in this case you take on the responsibility of stopping the spawned processes - this is useful if you need deeper control over actions, for example in scripts. In this case, you run the necessary script for the daemon yourself and control its termination.
 Also, if necessary, it is possible to launch daemons even without sally - and by running the necessary executable file from the console with manual input - this is possible due to the fact that 9l is a set of loosely coupled programs.
 
 # Acuping use
@@ -150,7 +150,7 @@ If you want to share the list of public peers with other devices. To get started
 ```
 #   yggdrasilctl getpeers > ../res/nodes
 ```
-Start the daemon server (so that you can respond to other devices), to do this, use the start peer server command in mike. Next, you need to use the "start peer client" command, you will be asked to enter the IPv6 address and port (it is assumed that the port can be found using acuping) of the device with which you want to synchronize the addresses of peers, specify the addresses in square brackets, you can specify several addresses. Example: "[<IPv6> <port>] [<IPv6> <port>] [<IPv6> <port>]". The list of peers will be available in the /res/nodes file of your space.
+Start the daemon server (so that you can respond to other devices), to do this, use the "start peer server" command in mike. Next, you need to use the "start peer client" command, you will be asked to enter the IPv6 address and port (it is assumed that the port can be found using acuping) of the device with which you want to synchronize the addresses of peers, specify the addresses in square brackets, you can specify several addresses. Example: "[IPv6 port] [IPv6 port] [IPv6 port]". The list of peers will be available in the /res/nodes file of your space.
 
 # Conclusion
 Cons: 
@@ -165,4 +165,3 @@ Many thanks to Chi, Chio and Cirno, Yggdrasil community, rabbits message: "No ma
 # Does it work without the Internet?
 Yes.
 Tested on older IBSS devices. To quickly enter mesh mode, use [powermesh.sh] (https://github.com/JmpKey/siren1/blob/main/powermesh.sh) (to exit mesh mode RESTART NetworkManager).
-
