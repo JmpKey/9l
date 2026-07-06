@@ -22,8 +22,8 @@ Understanding the difficulties of maintaining a solution in working order in con
 - using Yggdrasil connectivity allows you to easily connect devices to one network.
 
 # Unclear words
-Manifest - an analogue of torrent files, contains information about the distribution, is used to indicate what needs to be downloaded;
-Daemon - is simply a background process that performs one task assigned to it;
+Manifest - an analogue of torrent files, contains information about the distribution, is used to indicate what needs to be downloaded;<br>
+Daemon - is simply a background process that performs one task assigned to it;<br>
 Transfer archive - tar.gz archive which contains files that need to be transferred to the receiving device.
 
 # Funds provided by 9l
@@ -38,9 +38,9 @@ Demons:
 
 Note: all daemons can be used independently of each other.
 
-Implementation-bundle:
-mike - daemon server/file server, provides convenient management of daemons and stopping them (recommended in most cases);
-sally - daemon launch script, defines only how daemons in the current bundle should be launched (only for deeper scripts).
+Implementation-bundle:<br>
+mike - daemon server/file server, provides convenient management of daemons and stopping them (recommended in most cases);<br>
+sally - daemon launch script, defines only how daemons in the current bundle should be launched (only for deeper scripts).<br>
 
 Space structure:
 - bin/: contains daemon executable files;
